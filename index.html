@@ -20,7 +20,23 @@
             <h1> Computer Science 52! </h1>
             <h3> -Morgan Sorbaro </h3>
             <script>
-                
+            //taken from https://codepen.io/jagadeshanh/pen/YGJmmv for the color changing
+              function getRandomColor() {
+                var letters = '0123456789ABCDEF';
+                var color = '#';
+                for (var i = 0; i < 6; i++ ) {
+                  color += letters[Math.floor(Math.random() * 16)];
+                }
+                return color;
+              }
+
+              function changeColor(){
+                var t = document.getElementById("h1");
+                t.style.backgroundColor= getRandomColor();
+              }
+
+              setInterval(changeColor,500);
+
             </script>
           </div>
         </div>
