@@ -2,10 +2,43 @@
 
 <html>
 <head>
+    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+    <script type="text/javascript" src="scrolloverflow.js"></script>
+    <script type="text/javascript" src="jsfile.js"></script>
+    <script type="text/javascript" src="jquery.fullPage.js"></script>
+
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#fullpage').fullpage({
+          anchors: ['firstPage', 'secondPage', '3rdPage']
+
+        });
+      });
+    </script>
+
+
   <title>cs52.me</title>
 </head>
 <body>
-  <h1> CS52!!!! </h1>
-  <h3> -Morgan Sorbaro </h3> 
+
+  <ul id="menu">
+    <li data-menuanchor="firstPage"><a href="#firstPage">Hello</a></li>
+    <li data-menuanchor="secondPage"><a href="#secondPage">Excitement Level</a></li>
+    <li data-menuanchor="3rdPage"><a href="#3rdPage"></a>More Fun Memes</li>
+  </ul>
+
+  <div id = "fullpage">
+    <!-- Intro page, nothing here  -->
+    <div class = "section" id = "section0">
+      <h1> CS52!!!! </h1>
+
+    </div>
+    <div class = "section" id = "section1">
+      <h3>-Morgan </h3>
+    </div>
+
+  </div>
+
 </body>
 </html>
